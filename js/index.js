@@ -13,4 +13,21 @@ const MelhoresMEMES =[
 //Começa todos os votos zerados
 const votos = new Array(MelhoresMEMES.length).fill(0);
 
+//Guarda local que esta sendo exibido
+let indice1, indice2;
+
+//Seleciona os elementos da pagina
+const cartao1 = document.getElementById("cartao1");
+const cartao2 = document.getElementById("cartao2");
+const resultado = document.getElementById("resultado");
+const barras = document.getElementById("barras");
+const avisoProx = document.getElementById("proximo-aviso");
+
+//Sorteia um novo par de redes sociais diferentes
+function sortearPar (){
+    indice1 = Math.floor(Math.random() * memesMash.length);
+    do{
+        indice2 = Math.floor(Math.random() * memesMash.length);        
+    }while (indice2)
+}
 
